@@ -53,40 +53,47 @@ const TopBar = () => {
                   </a>
 
                   <div className='container mx-auto px-2  rounded-lg flex flex-row items-center  justify-center hover:shadow-lg '>
-                  <a href="#" className="text-sm text-white w-fit  align-middle font-sans font-medium text-center hover:text-gray-600">Dashboards  </a>
+                  <a href="#" className="text-sm text-white w-fit  align-middle font-sans font-medium text-center hover:text-gray-300">Dashboards  </a>
                   <IoIosArrowDown className='fill-white' />
          
                   </div>
 
                   <div className='container mx-auto px-2  rounded-lg flex flex-row items-center  justify-center hover:shadow-lg '>
-                  <a href="#" className="text-sm text-white w-fit  align-middle font-sans font-medium text-center hover:text-gray-600">Projects  </a>
+                  <a href="#" className="text-sm text-white w-fit  align-middle font-sans font-medium text-center hover:text-gray-300">Projects  </a>
                   <IoIosArrowDown className='fill-white' />
          
                   </div>
 
                   <div className='container mx-auto px-2  rounded-lg flex flex-row items-center  justify-center hover:shadow-lg '>
-                  <a href="#" className="text-sm text-white w-fit  align-middle font-sans font-medium text-center hover:text-gray-600">Issues  </a>
+                  <a href="#" className="text-sm text-white w-fit  align-middle font-sans font-medium text-center hover:text-gray-300">Issues  </a>
                   <IoIosArrowDown className='fill-white' />
          
                   </div>
 
                   <div className='container mx-auto px-1 rounded-lg flex flex-row items-center justify-center hover:shadow-lg '>
-                  <a href="#" className="text-sm text-white w-fit p-2 align-middle font-sans font-medium text-center hover:text-gray-600">Tests</a>
+                  <a href="#" className="text-sm text-white w-fit p-2 align-middle font-sans font-medium text-center hover:text-gray-300">Tests</a>
         
                   </div>
 
                   
 
                   <div className='container mx-auto px-2  rounded-lg flex flex-row items-center  justify-center hover:shadow-lg '>
-                  <Link to="/createticket" className="text-sm text-white w-fit  align-middle font-sans font-medium text-center hover:text-gray-600">
+                  <Link to="/createticket" className="text-sm text-white w-fit  align-middle font-sans font-medium text-center hover:text-gray-300">
                   <button onClick={() => setOpenPopup(true)} type="button">
                           Create
                       </button>
                       {/* <MdAddCircle className='fill-white' /> */}
                   </Link>
-        
-                  
-         
+                  </div>
+
+                  <div className='container mx-auto px-2  rounded-lg flex flex-row items-center  justify-center hover:shadow-lg '>
+                  <Link to="/addticket" className="text-sm text-white w-fit  align-middle font-sans font-medium text-center hover:text-gray-300">
+                  <button onClick={() => setOpenPopup(true)} type="button">
+                          AddTicket
+                      </button>
+                      
+                  </Link>
+                  <MdAddCircle className='fill-white' />
                   </div>
                   
             </div>

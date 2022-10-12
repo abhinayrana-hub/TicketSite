@@ -66,14 +66,14 @@ const TicketFields = (props) => {
         {/* <div>
         </div> */}
 
-        <div className="col-start-1 col-span-9">
+        {/* <div className="col-start-1 col-span-9">
         <label for="Project" className="block mb-2 text-sm font-bold text-gray-900 dark:text-gray-400">Project</label>
         <select onChange={handleChange} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
          {DataCollection.getProjectCollection.map((item) => {
                   return (<option value={item.id}>{item.title}</option>);
               })}
          </select>
-        </div>
+        </div> */}
 
         {/* <div className='col-start-1'>
         </div> */}

@@ -2,10 +2,11 @@ import './App.css';
 import SideBar from './components/SideBar';
 import TopBar from './components/TopBar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Queues, CreateTicket } from './pages';
+import { Queues, CreateTicket, AddTicket } from './pages';
 // import Queues from './pages';
 // import CreateTicket from './pages';
 import { useStateContext } from './contexts/ContextProvider';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
 
@@ -15,8 +16,9 @@ function App() {
 
 
   return (
-    <div className='min-w-full min-h-screen  h-screen overflow-hidden bg-white'>
+    <div className='min-w-full min-h-screen   overflow-hidden bg-white'>
       <BrowserRouter>
+      <ScrollToTop />
       <TopBar />
       <div className="flex relative dark:bg-main-dark-bg">
 
@@ -32,7 +34,7 @@ function App() {
             
             
             {activeMenu ? (
-            <div className="w-70 fixed bg-gradient-to-r from-gray-100
+            <div className="w-70 bg-gradient-to-r from-gray-100
             to-gray-50">
               <SideBar />
             </div>
@@ -42,7 +44,7 @@ function App() {
             </div>
           )}
           <div
-            className={ `flex flex-col dark:bg-main-dark-bg  bg-main-bg min-h-screen mr-12  w-4/5 ${activeMenu ? 'md:ml-[202px]' : 'flex-2'
+            className={ `flex flex-col dark:bg-main-dark-bg  bg-main-bg min-h-screen mr-6  w-4/5 ${activeMenu ? 'md:ml-[50px]' : 'flex-2'
           }`
             }
           >
@@ -52,10 +54,12 @@ function App() {
               {/* {themeSettings && (<ThemeSettings />)} */}
 
                <Routes>
+                
                                 {/* pages  */}
                                 <Route path="/" element={<Queues />} />
                                 <Route path="/queues" element={<Queues /> } />
                                 <Route path="/createticket" element={<CreateTicket />} />
+                                <Route path="/addticket" element={<AddTicket />} />
                                 {/* <Route path="/createticket" element={<Popup 
                                 openPopup = {openPopup} 
                                 setOpenPopup = {setOpenPopup}>
